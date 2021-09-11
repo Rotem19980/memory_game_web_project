@@ -1,4 +1,4 @@
-document.addEventListener('DMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
   const CardArray = [
     {
         name: "earth",
@@ -82,8 +82,8 @@ document.addEventListener('DMContentLoaded', () => {
     }
     else if (cardsChosen[0] === cardsChosen[1]) {
       alert('You found a match')
-      cards[optionOneId].setAttribute('src', 'images/white.png')
-      cards[optionTwoId].setAttribute('src', 'images/white.png')
+      cards[optionOneId].setAttribute('src', 'images/white.jpg')
+      cards[optionTwoId].setAttribute('src', 'images/white.jpg')
       cards[optionOneId].removeEventListener('click', flipCard)
       cards[optionTwoId].removeEventListener('click', flipCard)
       cardsWon.push(cardsChosen)
